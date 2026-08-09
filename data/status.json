@@ -1,0 +1,14 @@
+{
+  website: "Online",
+  websiteMessage: "All systems operational.",
+  api: "Online",
+  apiMessage: "All API pings are low.",
+  database: "Online",
+  databaseMessage: "Our database is currently up.",
+  auth: "Degraded",
+  authMessage: "Some of our services are updating at wrong times. ETA of fix: 10/10/25 by 21:00 UTC-04",
+  bot: "Online",
+  botMessage: "Zavro is currently working.",
+  cmdev: "Degraded",
+  cmdevMsg: "Some of our commands commands aren't working properly at this time. ETA of fix: 10/10/25 by 21:00 UTC-04"
+}
