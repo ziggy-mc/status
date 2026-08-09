@@ -10,4 +10,4 @@ const SystemStatusSchema = new mongoose.Schema({
   lastUpdated: { type: Date, default: Date.now },
 });
 
-export default mongoose.models.CSystemStatus || mongoose.model("CSystemStatus", CSystemStatusSchema);
+export default mongoose.models.SystemStatus || mongoose.model("SystemStatus", SystemStatusSchema);
