@@ -36,13 +36,10 @@ export default function AdvancedStatus() {
         setServices([
           { service: "Website 1 (mtr)", status: data.website1, message: data.websiteMessage1 },
           { service: "Website 2 (zavro)", status: data.website2, message: data.websiteMessage2 },
-          { service: "Website (overall)", status: data.websiteoverall, message: data.websiteoverallmsg },
           { service: "Database 1 (mongo)", status: data.data1, message: data.data1msg },
           { service: "Database 2 (sqlite)", status: data.data2, message: data.data2msg },
-          { service: "Database (overall)", status: data.dataoverall, message: data.dataoverallmsg },
           { service: "VPS 1 (mtr,live)", status: data.vps1, message: data.vps1msg },
           { service: "VPS 2 (zavro)", status: data.vps2, message: data.vps2msg },
-          { service: "VPS (overall)", status: data.vpsoverall, message: data.vpsoverallmsg },
           { service: "CDN", status: data.cdn, message: data.cdnmsg },
         ]);
 

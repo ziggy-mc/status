@@ -102,13 +102,13 @@ export default function Home() {
   return (
     <>
     <Head>
-        <meta property="og:title" content="System Status | Zavro Discord Bot" />
-        <meta property="og:description" content="Check the current status of Zavro Discord Bot services like API, Commands, Services, and much more." />
-        <meta property="og:url" content="https://status.zavrobot.tech/" />
+        <meta property="og:title" content="System Status | muiwzi services" />
+        <meta property="og:description" content="Check the current status of our infrastructure." />
+        <meta property="og:url" content="https://status.ziggymc.me/" />
         <meta property="og:type" content="website" />
         <meta name="theme-color" content="#5865F2" />
       </Head>
-    <Layout title="System Status | Zavro Discord Bot">
+    <Layout title="System Status | muiwzi services">
       
       {/* Active Incidents Banner */}
       <IncidentBanner />

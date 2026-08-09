@@ -18,7 +18,7 @@ export default function Layout({ children, title }) {
       </main>
 
       <footer className="mt-auto pb-6 text-gray-400 text-sm text-center">
-        &copy; {copyrightYear} Zavro Bot (zigydbot) — All rights reserved.
+        &copy; {copyrightYear} muiwzi services (muizi) — All rights reserved.
       </footer>
     </div>
   );
