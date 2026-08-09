@@ -27,4 +27,4 @@ const StatusSchema = new mongoose.Schema({
   cdnmsg: { type: String, default: "All CDN systems are operational." },
 }, { timestamps: true });
 
-export default mongoose.models.Status || mongoose.model("Status", StatusSchema);
+export default mongoose.models.CStatus || mongoose.model("CStatus", CStatusSchema);
