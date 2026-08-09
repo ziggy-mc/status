@@ -29,16 +29,28 @@ export default NextAuth({
   },
 
   callbacks: {
-    async session({ session, token }) {
-      session.user.id = token.sub;
-      session.user.username = token.name || session.user.name;
-      return session;
-    },
+  async jwt({ token, profile }) {
+    if (profile) {
+      token.sub = profile.id;
+      token.email = profile.email;
+      token.name = profile.username || profile.global_name || profile.name;
+    }
 
-    async redirect({ url, baseUrl }) {
-      if (url.startsWith("/")) return `${baseUrl}${url}`;
-      if (new URL(url).origin === baseUrl) return url;
-      return `${baseUrl}/select`;
-    },
+    return token;
   },
+
+  async session({ session, token }) {
+    session.user.id = token.sub;
+    session.user.username =
+      token.name || session.user.name;
+
+    return session;
+  },
+
+  async redirect({ url, baseUrl }) {
+    if (url.startsWith("/")) return `${baseUrl}${url}`;
+    if (new URL(url).origin === baseUrl) return url;
+    return `${baseUrl}/select`;
+  },
+},
 });
