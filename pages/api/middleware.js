@@ -6,6 +6,13 @@ export async function middleware(req) {
   const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET });
   const pathname = req.nextUrl.pathname.replace(/\/$/, "");
 
+  console.log("[ADMIN AUTH DEBUG]", {
+  tokenSub: token?.sub,
+  tokenEmail: token?.email,
+  adminDiscordId: ADMIN_DISCORD_ID,
+  adminEmail: ADMIN_EMAIL,
+});
+
   // PUBLIC ROUTES
   if (
     pathname === "/" ||
