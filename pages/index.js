@@ -16,7 +16,7 @@ export default function Home() {
   const [embedCopied, setEmbedCopied] = useState(false);
 
   const getEmbedCode = () => {
-    const origin = typeof window !== "undefined" ? window.location.origin : "https://status.zavrobot.tech";
+    const origin = typeof window !== "undefined" ? window.location.origin : "https://uptime.ziggymc.me";
     return `<iframe\n  src="${origin}/embed"\n  width="600"\n  height="500"\n  style="border:none;border-radius:12px;"\n  title="Zavro Bot System Status"\n></iframe>`;
   };
 
@@ -104,7 +104,7 @@ export default function Home() {
     <Head>
         <meta property="og:title" content="System Status | muiwzi services" />
         <meta property="og:description" content="Check the current status of our infrastructure." />
-        <meta property="og:url" content="https://status.ziggymc.me/" />
+        <meta property="og:url" content="https://uptime.ziggymc.me/" />
         <meta property="og:type" content="website" />
         <meta name="theme-color" content="#5865F2" />
       </Head>
